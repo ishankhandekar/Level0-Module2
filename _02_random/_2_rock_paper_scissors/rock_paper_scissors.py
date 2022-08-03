@@ -9,7 +9,7 @@ def onclick(args):
 
     # TODO 2) Change the value of opponent_selection to be a random number
     #  between 1 and 3
-    opponent_selection = 1
+    opponent_selection = random.randint(1,3)
 
     # TODO 3) Run the program again. Is the result different?
 
@@ -49,13 +49,13 @@ if __name__ == '__main__':
 
     Label(window, text="Choose Your Weapon!", bg="grey").pack(side="left")
 
-    img_rock = ImageTk.PhotoImage(file="rock.png")
-    img_paper = ImageTk.PhotoImage(file="paper.jpeg")
-    img_scissors = ImageTk.PhotoImage(file="scissors.jpeg")
+    #img_rock = ImageTk.PhotoImage(file="C:/Users/Ishan Khandekar/Documents/GitHub/Level0-Module2/_02_random/_2_rock_paper_scissors/rock.png")
+    #img_paper = ImageTk.PhotoImage(file="C:/Users/Ishan Khandekar/Documents/GitHub/Level0-Module2/_02_random/_2_rock_paper_scissors/paper.jpeg")
+    #img_scissors = ImageTk.PhotoImage(file="C:/Users/Ishan Khandekar/Documents/GitHub/Level0-Module2/02_random/_2_rock_paper_scissors/scissors.jpeg")
 
-    Button(window, image=img_rock, command=lambda: onclick("ROCK")).pack(side="left")
-    Button(window, image=img_paper, command=lambda: onclick("PAPER")).pack(side="left")
-    Button(window, image=img_scissors, command=lambda: onclick("SCISSORS")).pack(side="left")
+    Button(window, text = "rock", command=lambda: onclick("ROCK")).pack(side="left")
+    Button(window, text = "paper",command=lambda: onclick("PAPER")).pack(side="left")
+    Button(window, text = "scissor",command=lambda: onclick("SCISSORS")).pack(side="left")
 
     # Start the GUI
     window.mainloop()

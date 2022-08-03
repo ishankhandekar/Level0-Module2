@@ -7,7 +7,7 @@ if __name__ == '__main__':
     #   Generates a random integer(whole number)
     #   start = lower bound of random number
     #   end = upper bound of random number
-
+    
     # Prints out 5 random whole numbers between 0 and 100 (0 and 100 both included)
     for i in range(5):
         number = random.randint(0, 100)
