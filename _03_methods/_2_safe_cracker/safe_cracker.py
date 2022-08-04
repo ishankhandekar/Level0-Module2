@@ -29,7 +29,7 @@ def try_code(guess):
 
 
 def play_the_sound_of_success():
-    playsound('me-gusta.wav')
+    playsound('C:/Users/Ishan Khandekar/Documents/GitHub/Level0-Module2/_03_methods/_2_safe_cracker/me-gusta.wav')
 
 
 if __name__ == '__main__':
