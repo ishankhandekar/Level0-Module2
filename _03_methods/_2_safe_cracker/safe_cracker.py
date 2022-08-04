@@ -8,7 +8,7 @@ def crack_the_safe():
     pass
     # TODO: Your mission: Use the try_code method to crack the safe
     #  by trying all possible combinations
-    for i in range(999999):
+    for i in range(999000,999999):
         try_code(i)
 
 
